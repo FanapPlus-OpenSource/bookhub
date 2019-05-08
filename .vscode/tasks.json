@@ -5,8 +5,8 @@
     "tasks": [
         {
             "label": "build",
-            "command": "dotnet build",
-            "type": "process",
+            "type": "shell",
+            "command": "dotnet build BookHub.sln",
             "group": "build",
             "presentation": {
                 "reveal": "always",
