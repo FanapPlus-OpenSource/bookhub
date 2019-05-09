@@ -1,18 +1,42 @@
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Web.Models
 {
     public class Literature
     {
-        public LiteratureType Type { get; set; }
-        public IEnumerable<LiteratureCategory> Categories { get; set; }
+        [Required]
+        [MaxLength(100)]
         public string Title { get; set; }
+
+        [MaxLength(1000)]
+        public string Description { get; set; }
+
+        [Required]
+        [MaxLength(50)]
+        public string Author { get; set; }
+
+        public string Translator { get; set; }
+
+        [Required]
+        public LiteratureType Type { get; set; }
+
+        [Required]
+        public IEnumerable<LiteratureCategory> Categories { get; set; }
+
+        public Publication Publication { get; set; }
+    }
+
+    public class Publication
+    {
+        public string Name { get; set; }
+        public string Code { get; set; }
     }
 
     public class LiteratureCategory
     {
         public string Name { get; set; }
-        public string Code { get; set; } 
+        public string Code { get; set; }
     }
 
     public enum LiteratureType
