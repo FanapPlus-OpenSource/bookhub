@@ -26,23 +26,4 @@ namespace Web.Models
 
         public Publication Publication { get; set; }
     }
-
-    public class Publication
-    {
-        public string Name { get; set; }
-        public string Code { get; set; }
-    }
-
-    public class LiteratureCategory
-    {
-        public string Name { get; set; }
-        public string Code { get; set; }
-    }
-
-    public enum LiteratureType
-    {
-        Book,
-        Magazine,
-        Article
-    }
 }
