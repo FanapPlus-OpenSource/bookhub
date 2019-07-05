@@ -5,7 +5,7 @@ namespace Web
 {
     public class BookHubDbContext : DbContext
     {
-        public DbSet<Literature> Literature { get; set; }
+        public DbSet<Literature> LiteratureSet { get; set; }
         public BookHubDbContext(DbContextOptions options) : base(options)
         {
         }
