@@ -12,6 +12,7 @@
 			"**/CVS": true,
 			"**/.DS_Store": true,
 			"**/.vs": true
-		}
+		},
+		"terminal.integrated.fontSize": 12
 	}
 }
